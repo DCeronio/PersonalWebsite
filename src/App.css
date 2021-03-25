@@ -1,38 +1,253 @@
-.App {
+* {
   text-align: center;
+  margin: 0 0 0 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Content {
+  min-height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.Hero {
+  background: #000000;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.Hero h1 {
+  font-family: Goudy Old Style;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 86px;
+  color: #ffffff;
+}
+
+.Hero button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2d2d2d;
+  margin: 10px;
+  border: none;
+}
+
+.Hero button:hover {
+  background-color: #424242;
+}
+
+.Hero button#Skills {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.Hero button#Contact {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.Main-Title {
+  background-image: url(./images/heroBackground.jpg);
+  background-size: 665px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 3;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.About {
+  min-height: 500px;
+  background: #01458e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About img {
+  padding-right: 16px;
+}
+
+.About p {
+  font-family: Helvetica Neue LT Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  text-align: center;
+  width: 24em;
+}
+
+@media (max-width: 1036px) {
+  .About {
+    flex-direction: column;
+  }
+  .About p {
+    padding-bottom: 30px;
+    font-size: small;
+  }
+  .About img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.Project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
+  background: #4d4b4b;
+  font-family: Helvetica Neue LT Pro;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.Project h1 {
+  font-size: 36px;
+  line-height: 43px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Project h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.Project ul {
+  font-size: 24px;
+  line-height: 29px;
+}
+.Project li {
+  text-align: left;
+}
+
+.Skills {
+  background-color: #01458e;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.row {
+  padding: 0 4px;
+}
+
+.row img {
+  margin: 20px;
+  vertical-align: middle;
+  width: 250px;
+  height: auto;
+}
+
+@media (max-width: 910px) {
+  .row img {
+    width: 100px;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 445px) {
+  .row img {
+    width: 50px;
+    height: auto;
   }
+}
+
+.Education {
+  min-height: 500px;
+  background-color: #4d4b4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SchoolInfo p,
+.SchoolInfo h3 {
+  font-family: Helvetica Neue LT Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  width: 18em;
+  text-align: left;
+}
+
+.Awards {
+  background-color: #01458e;
+  display: flex;
+  justify-content: center;
+}
+
+.AwardInfo p,
+.AwardInfo h3 {
+  font-family: Helvetica Neue LT Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  width: 30em;
+  text-align: left;
+}
+
+.AwardInfo p {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.Footer {
+  background-color: #4d4b4b;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.Footer h3,
+.Footer p {
+  color: #ffffff;
+}
+
+.SendMessage input {
+  height: 159px;
+  width: 402px;
+}
+
+.ContactInfo {
+  padding-left: 185px;
+}
+
+.SendMessage,
+.ContactInfo {
+  padding-top: 50px;
+  font-family: Helvetica Neue LT Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.ContactInfo p {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.ContactInfo h3,
+.ContactInfo p {
+  text-align: left;
+}
+
+.ContactInfo #github {
+  height: 50px;
+}
+
+.ContactInfo #linkedin {
+  height: 50px;
 }

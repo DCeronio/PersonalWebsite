@@ -1,3 +1,7 @@
+# My Own Notes
+
+This is my own personal website that is a created with HTML, CSS, and React.js. It currently has information from my resume.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

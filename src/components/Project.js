@@ -1,6 +1,6 @@
 const Project = () => {
     return ( 
-        <div>
+        <div className="Content Project">
             <h1>Disconnected Networks YouTube Senior Project</h1>
             <h2>Technologies Used: Python, Click, YouTube Data API, JSON</h2>
             <ul>
