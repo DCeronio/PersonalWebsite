@@ -4,10 +4,6 @@ import linkedin from '../images/linkedin.svg';
 const Footer = () => {
     return ( 
         <div className="Content Footer">
-            <div className="SendMessage">
-            <h3>Send Me A Message</h3>
-            <input type="text" />
-            </div>
             <div className="ContactInfo">
                 <h3>Contact Info</h3>   
                 <p>Dylan Ceronio</p>

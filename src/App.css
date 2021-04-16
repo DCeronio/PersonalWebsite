@@ -5,6 +5,7 @@
 
 .Content {
   min-height: 500px;
+  box-shadow: 0px 50px;
 }
 
 .Hero {
@@ -77,25 +78,11 @@
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 2em;
   color: #ffffff;
   text-align: center;
-  width: 24em;
-}
-
-@media (max-width: 1036px) {
-  .About {
-    flex-direction: column;
-  }
-  .About p {
-    padding-bottom: 30px;
-    font-size: small;
-  }
-  .About img {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+  width: clamp(45ch, 50%, 75ch);
 }
 
 .Project {
@@ -110,21 +97,29 @@
   font-weight: normal;
 }
 
+.Project h1,
+h2,
+ul,
+li {
+  width: clamp(45ch, 85%, 75ch);
+}
 .Project h1 {
-  font-size: 36px;
+  /*font-size: 36px;*/
+  font-size: clamp(1.2rem, 2.5vw, 3rem);
   line-height: 43px;
 }
 
 .Project h2 {
-  font-size: 24px;
+  font-size: clamp(1rem, 2vw, 2rem);
   line-height: 29px;
 }
 
 .Project ul {
-  font-size: 24px;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   line-height: 29px;
 }
 .Project li {
+  padding-top: 1rem;
   text-align: left;
 }
 
@@ -142,22 +137,8 @@
 .row img {
   margin: 20px;
   vertical-align: middle;
-  width: 250px;
+  width: 15vw;
   height: auto;
-}
-
-@media (max-width: 910px) {
-  .row img {
-    width: 100px;
-    height: auto;
-  }
-}
-
-@media (max-width: 445px) {
-  .row img {
-    width: 50px;
-    height: auto;
-  }
 }
 
 .Education {
@@ -168,15 +149,20 @@
   align-items: center;
 }
 
+.Education img {
+  width: 21vw;
+  height: auto;
+  padding-left: 1rem;
+}
+
 .SchoolInfo p,
 .SchoolInfo h3 {
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: clamp(1rem, 2vw, 2rem);
   line-height: 38px;
   color: #ffffff;
-  width: 18em;
   text-align: left;
 }
 
@@ -191,16 +177,11 @@
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: clamp(1rem, 2vw, 2rem);
   line-height: 38px;
   color: #ffffff;
   width: 30em;
   text-align: left;
-}
-
-.AwardInfo p {
-  font-size: 24px;
-  line-height: 29px;
 }
 
 .Footer {
@@ -215,28 +196,13 @@
   color: #ffffff;
 }
 
-.SendMessage input {
-  height: 159px;
-  width: 402px;
-}
-
-.ContactInfo {
-  padding-left: 185px;
-}
-
-.SendMessage,
 .ContactInfo {
   padding-top: 50px;
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: clamp(1rem, 2vw, 2rem);
   line-height: 43px;
-}
-
-.ContactInfo p {
-  font-size: 24px;
-  line-height: 29px;
 }
 
 .ContactInfo h3,
@@ -250,4 +216,25 @@
 
 .ContactInfo #linkedin {
   height: 50px;
+}
+
+@media (max-width: 600px) {
+  .About {
+    flex-direction: column;
+  }
+  .About p {
+    padding-bottom: 30px;
+  }
+  .About img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .AwardInfo p,
+  .AwardInfo h3 {
+    text-align: center;
+  }
+  .Education {
+    flex-direction: column;
+  }
 }
