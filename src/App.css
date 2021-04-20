@@ -3,29 +3,48 @@
   margin: 0 0 0 0 auto;
 }
 
+html,body {padding:0; margin:0;}
+
 .Hero {
   position: relative;
   text-align: center;
-  background-image: url(./images/heroBackground.jpg);
+  background-image: url(./images/heroBackground.svg);
   height: 100vh;
   width: auto;
   background-size: cover;
   background-position: center;
-  z-index: -2;
 }
 
-.Main-Title h1 {
+.Hero h1 {
   position: absolute;
-  font-family: Goudy Old Style;
+  font-family: Agency FB;
   font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 86px;
-  color: #000;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 85px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin:0;
+  top: 55%;
+  right: 17%;
+}
+
+.Hero h2#subtitle{
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  width: 45%;
+  font-family: Agency FB;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 85px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 70%;
+  left:50%;
 }
 
 .topNav {
@@ -34,11 +53,10 @@
   flex-direction: row;
   top: 8px;
   right: 16px;
-  z-index: 1;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: .75em;
   line-height: 28px;
   text-align: center;
   color: #000000;
@@ -49,13 +67,13 @@
   padding-left: 22px;
 }
 
-.Hero #cover {
-  position: relative;
-  border-bottom: 1446px solid #c4c4c4;
-  border-left: 937px solid transparent;
-  width: 966px;
-  z-index: -1;
-  /*border-right: 1466px solid transparent;*/
+.Hero img{
+  position:absolute;  
+  border: 5px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 210px;
+  right: 18%;
+  top: 16%;
 }
 
 .About {
