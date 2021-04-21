@@ -1,14 +1,19 @@
 const Project = () => {
+    const projects = [
+        {
+            title: "Disconnected Networks YouTube Senior Project",
+            tech: "Technologies Used: Python, Click, YouTube Data API, JSON",
+            points: ["Designed to allow for asynchronous YouTube video downloads for those with limited internet access", 
+                     "Implemented client that creates JSON requests for video downloads",
+                     "Created server that downloads and compresses videos from YoutTube Data API",
+                     "Designed JSON response schema for download requests and server responses"]
+        }
+    ]
+
+
     return ( 
-        <div className="Content Project">
-            <h1>Disconnected Networks YouTube Senior Project</h1>
-            <h2>Technologies Used: Python, Click, YouTube Data API, JSON</h2>
-            <ul>
-                <li>Designed to allow for asynchronous YouTube video downloads for those with limited internet acess</li>
-                <li>Implemented client that creates JSON requests for video downloads</li>
-                <li>Created server that downloads and compresses videos from YoutTube Data API</li>
-                <li>Designed JSON response schema for download requests and server responses</li>
-            </ul>
+        <div id= "ProjectSection" className="Content Project">
+            <h1>{projects[0].title}</h1>
         </div>
      );
 }

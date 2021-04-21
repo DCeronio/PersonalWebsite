@@ -11,7 +11,7 @@ import react from '../images/react.svg';
 
 const Skills = () => {
     return (
-        <div className="Skills">
+        <div id= "SkillsSection" className="Skills">
             <div className="row">
                 <img id= "C" src={c} alt="C logo" width="270" height="250"/>
                 <img id="Js" src={js} alt="JavaScript logo" width="184" height="186"/>

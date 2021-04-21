@@ -5,11 +5,12 @@ const Hero = () => {
 
     return (
         <div className="Content Hero">
+            <div id="color"></div>
             <div id="background"></div>
             <div className="topNav">
-                <h2 id="Skills">Skills</h2>
-                <h2 id="Projects">Projects</h2>
-                <h2 id="Contact">Contact</h2>
+                <h2 id="Skills"><a href="#SkillsSection">Skills</a></h2>
+                <h2 id="Projects"><a href="#ProjectSection">Projects</a></h2>
+                <h2 id="Contact"><a href="#FooterSection">Contact</a></h2>
             </div>
             <img src={headshot} alt='Professional Headshot' width="242" height="230" />
             <h1>DYLAN CERONIO</h1>
