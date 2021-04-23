@@ -1,18 +1,42 @@
 * {
   text-align: center;
   margin: 0 0 0 0 auto;
+  scroll-behavior: smooth;
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+.Content {
+  padding: 32px 0px;
 }
 
 .Hero {
   position: relative;
+  display: flex;
   min-height: 100vh;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.topNav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 8px;
+  right: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(0.2em, 0.75em, 0.75em);
+  line-height: 28px;
+  text-align: center;
+  color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  animation: fadeIn;
+  animation-duration: 6.5s;
+}
+
+.topNav h2 {
+  padding-left: 22px;
 }
 
 .Hero a {
@@ -26,80 +50,77 @@ body {
 }
 
 .Hero #background {
+  position: relative;
   background-image: url(./images/heroBackground.jpg);
-  background-position-x: -30%;
-  clip-path: polygon(0 0, 59% 0, 29% 100%, 0% 100%);
+  clip-path: polygon(0 0, 75% 0, 29% 100%, 0% 100%);
+  width: 100%;
   height: 100vh;
-  width: auto;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  animation-name: clipPath;
+  animation-duration: 3.5s;
+}
+
+@keyframes clipPath {
+  from {
+    clip-path: polygon(0 0, 0% 0, 0% 0%, 0% 0%);
+  }
+  to {
+    clip-path: polygon(0 0, 75% 0, 29% 100%, 0% 100%);
+  }
 }
 
 .Hero #color {
   position: absolute;
-  height: 100vh;
-  width: 99vw;
+  width: 100%;
+  height: 100%;
   background-color: #c4c4c4;
 }
 
-.Hero h1 {
+.Titles {
   position: absolute;
+  animation: fadeIn;
+  animation-duration: 6.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.Titles h1 {
   font-family: Agency FB;
   font-style: normal;
   font-weight: normal;
   font-size: 3em;
   line-height: 85px;
   text-align: center;
-  color: #000000;
+  color: black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
-  top: 55%;
-  right: 20%;
+  padding-top: 30px;
 }
 
-.Hero h2#subtitle {
-  position: absolute;
-  margin: 0;
+.Titles h2 {
   text-align: center;
-  width: 45%;
   font-family: Agency FB;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.5em;
+  font-size: clamp(0.75em, 2em, 2.5em);
   line-height: 85px;
   text-align: center;
-  color: #000000;
+  color: black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  top: 70%;
-  left: 50%;
-}
-
-.topNav {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  top: 8px;
-  right: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.75em;
-  line-height: 28px;
-  text-align: center;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.topNav h2 {
-  padding-left: 22px;
+  padding-right: 20px;
 }
 
 .Hero img {
-  position: absolute;
   border: 5px solid #000000;
   border-radius: 210px;
-  right: 18%;
-  top: 16%;
 }
 
 .About {
@@ -111,7 +132,6 @@ body {
 }
 
 .About p {
-  padding-top: 50px;
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
@@ -119,7 +139,7 @@ body {
   letter-spacing: 0.05em;
   color: #171717;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: clamp(1rem, 1.5em, 2rem);
+  font-size: 1.5em;
   line-height: 2em;
   width: clamp(45ch, 50%, 75ch);
 }
@@ -136,40 +156,13 @@ body {
   font-family: Unispace;
   font-style: normal;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 3em;
   line-height: 77px;
   text-align: center;
   color: #1b75b3;
   text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*
-.Project h1,
-h2,
-ul,
-li {
-  width: clamp(45ch, 85%, 75ch);
-}
-.Project h1 {
-  /*font-size: 36px;
-  font-size: clamp(1.2rem, 2.5vw, 3rem);
-  line-height: 43px;
-}
-
-.Project h2 {
-  font-size: clamp(1rem, 2vw, 2rem);
-  line-height: 29px;
-}
-
-.Project ul {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-  line-height: 29px;
-}
-.Project li {
-  padding-top: 1rem;
-  text-align: left;
-}
-*/
 .Skills {
   background-color: #c4c4c4;
   display: flex;
@@ -198,9 +191,8 @@ li {
 }
 
 .Education img {
-  width: 10vw;
+  width: 10em;
   height: auto;
-  padding-left: 1rem;
 }
 
 .SchoolInfo p,
@@ -209,7 +201,7 @@ li {
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: 1em;
   line-height: 38px;
   text-align: center;
   color: #000000;
@@ -227,7 +219,7 @@ li {
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: 1em;
   line-height: 38px;
   color: #000;
   width: 30em;
@@ -237,20 +229,18 @@ li {
 
 .Footer {
   background-color: #4d4b4b;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
 }
 
 .ContactInfo {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 50px;
   font-family: Helvetica Neue LT Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.5em, 1em, 1em);
   line-height: 43px;
   color: white;
 }
@@ -262,32 +252,22 @@ li {
 }
 
 .ContactInfo #github {
-  height: 50px;
+  height: 50%;
   padding-bottom: 10px;
 }
 
 .ContactInfo #linkedin {
-  height: 50px;
+  height: 50%;
   padding-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-  .About {
-    flex-direction: column;
+@media (max-width: 1420px) {
+  .Hero {
+    align-items: center;
   }
-  .About p {
-    padding-bottom: 30px;
-  }
-  .About img {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .AwardInfo p,
-  .AwardInfo h3 {
-    text-align: center;
-  }
-  .Education {
-    flex-direction: column;
+  .Titles h1,
+  .Titles h2,
+  .topNav {
+    color: white;
   }
 }
