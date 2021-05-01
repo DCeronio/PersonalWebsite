@@ -1,23 +1,25 @@
 import './App.css';
-import Hero from './components/Hero.js';
-import About from './components/About.js';
-import Project from './components/Project.js';
-import Skills from './components/Skills.js';
-import Education from './components/Education.js';
-import Awards from './components/Awards.js';
-import Footer from './components/Footer.js';
+import Home from './components/Home.js';
+import Navbar from './components/Navbar.js';
+import Contact from './components/Contact.js';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Hero/>
-      <About/>
-      <Project/>
-      <Skills/>
-      <Education/>
-      <Awards/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/contact">
+            <Contact/>
+          </Route>
+        </Switch>
+        </div>  
+    </Router>
   );
 }
 
