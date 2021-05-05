@@ -11,7 +11,6 @@ import Footer from './Footer.js';
 const Home = () => {
     return ( 
         <div className="Home">
-            <Navbar/>
             <Hero/>
             <About/>
             <Project/>
