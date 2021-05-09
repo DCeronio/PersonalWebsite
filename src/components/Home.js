@@ -1,7 +1,6 @@
-import Navbar from './Navbar.js';
 import Hero from './Hero.js';
 import About from './About.js';
-import Project from './Project.js';
+import ProjectTitleSlider from './ProjectTitleSlider.js';
 import Skills from './Skills.js';
 import Education from './Education.js';
 import Awards from './Awards.js';
@@ -13,7 +12,7 @@ const Home = () => {
         <div className="Home">
             <Hero/>
             <About/>
-            <Project/>
+            <ProjectTitleSlider/>
             <Skills/>
             <Education/>
             <Awards/>
