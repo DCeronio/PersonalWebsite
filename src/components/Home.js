@@ -4,7 +4,6 @@ import ProjectTitleSlider from './ProjectTitleSlider.js';
 import Skills from './Skills.js';
 import Education from './Education.js';
 import Awards from './Awards.js';
-import Footer from './Footer.js';
 
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
             <Skills/>
             <Education/>
             <Awards/>
-            <Footer/>
         </div>  
      );
 }

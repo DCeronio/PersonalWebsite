@@ -1,4 +1,3 @@
-import Footer from './Footer.js';
 
 const Contact = () => {
     return ( 
@@ -11,7 +10,6 @@ const Contact = () => {
                 <input type="submit" value="Submit"/>
             </form>
         </div>
-        <Footer/>
         </>
      );
 }

@@ -202,6 +202,19 @@
   text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
+.ProjectSlider a {
+  text-decoration: none;
+}
+
+.ProjectSlider a:visited {
+  color: #1b75b3;
+}
+
+.ProjectSlider a:hover {
+  color: white;
+  transition-duration: 0.5s;
+}
+
 .bullets {
   position: absolute;
   padding-top: 50px;
@@ -390,6 +403,51 @@
 
 .Contact input[type="submit"]:hover {
   background: rgb(9, 53, 119);
+}
+
+.projectBoard,
+.projectDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 81vh;
+  padding: 16px;
+  background: #c4c4c4;
+}
+
+.projectBoard a,
+.projectDisplay h2 {
+  text-decoration: none;
+  font-family: Unispace;
+  font-style: normal;
+  text-align: center;
+  color: #1b75b3;
+  text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.projectBoard a:visited {
+  color: #1b75b3;
+}
+
+.projectBoard a:hover {
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.projectDisplay h3,
+.projectDisplay li {
+  font-family: Helvetica Neue LT Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 38px;
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectDisplay li {
+  text-align: left;
 }
 
 @media (max-width: 1420px) {

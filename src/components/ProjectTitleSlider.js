@@ -2,6 +2,7 @@ import {projects} from './ProjectData.js';
 import {useState} from 'react';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 import ProjectBullets from './ProjectBullets.js';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const ProjectTitleSlider = () => {
     const [current, setCurrent] = useState(0);
@@ -18,7 +19,11 @@ const ProjectTitleSlider = () => {
         return null;
     }
 
+    const pageHref = [];
 
+    projects.forEach((project) => {
+         pageHref.push(["\\",project.webpage].join(""));
+    });
 
     return ( 
         <div className="ProjectSlider">
@@ -26,7 +31,7 @@ const ProjectTitleSlider = () => {
             {projects.map((project, index) => {
                 return (
                 <div className={index === current ? 'projTitleActive' : 'projTitle'} key={index}>
-                    {index === current && (<h1>{project.title}</h1>)}
+                    {index === current && (<h1><Link to={`/project/${index}`}>{project.title}</Link></h1>)}
                 </div>  
                 )
             })}

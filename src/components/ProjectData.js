@@ -7,7 +7,7 @@ export const projects = [
                  "Created server that downloads and compresses videos from YoutTube Data API",
                  "Designed JSON response schema for download requests and server responses"
                 ],
-        webpage: "youtTubeProject"
+        webpage: "youtubeproject"
     },
     {
         title: "Spartan Connect Website, SJSU Social Platform",
@@ -17,7 +17,7 @@ export const projects = [
                 "Unit tested and page tested using Cypress",
                 "Worked with group of seven using SCRUM project management and AGILE development techniques"
                 ],
-        webpage: "sjsuSocialProject"
+        webpage: "sjsusocialproject"
     },
     {
         title: "Piman Networking Project",
@@ -30,6 +30,6 @@ export const projects = [
                 "ntegrated NTP server and client that updates time on Pi’s",
                 "Worked with two separate groups of four"
                 ],
-        webpage: "networkingProject"
+        webpage: "networkingproject"
     }
 ]
