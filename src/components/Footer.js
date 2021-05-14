@@ -3,7 +3,7 @@ import linkedin from '../images/linkedin.svg';
 
 const Footer = () => {
     return ( 
-        <div id= "FooterSection" className="Content Footer">
+        <div id= "FooterSection" className="Footer">
             <div className="ContactInfo">   
                 <p>Dylan Ceronio</p>
                 <p>Sunnyvale, CA</p>
