@@ -4,10 +4,10 @@ const Contact = () => {
         <>
         <div className="Contact">
             <h1>Send me a message</h1>
-            <form action="POST" data-netlify="true">
-                <input type="text" id="name" name="name" placeholder="Your Name"/>
-                <textarea type="text" id="message" name="message" placeholder="Message"/>
-                <input type="submit" value="Submit"/>
+            <form name="contact-form" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Your Name"/>
+                <textarea type="text" name="message" placeholder="Message"/>
+                <button type="submit">Submit</button>
             </form>
         </div>
         </>
