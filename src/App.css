@@ -68,10 +68,10 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  animation-name: clipPath;
-  animation-duration: 3.5s;
+  /* animation-name: clipPath;
+  animation-duration: 3.5s;*/
 }
-
+/*
 @keyframes clipPath {
   from {
     clip-path: polygon(0 0, 0% 0, 0% 0%, 0% 0%);
@@ -79,7 +79,7 @@
   to {
     clip-path: polygon(0 0, 75% 0, 29% 100%, 0% 100%);
   }
-}
+}*/
 
 .Hero #color {
   position: absolute;
