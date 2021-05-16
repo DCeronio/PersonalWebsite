@@ -10,24 +10,23 @@ import ProjectDisplay from './components/ProjectDisplay'
 
 function App() {
   return (
-    
-      <div className="App">       
-        <Router>
-          <Navbar/>
-          <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/SkillPage">
-              <div className="SkillPage">
-                <Skills/>
-              </div>
-            </Route>
-            <Route path="/ProjectPage" component={ProjectPage}/>
-            <Route path="/Contact" component={Contact}/>
-            <Route path={`/project/:index`} component={ProjectDisplay}/>
-          </Switch>
-          <Footer/>
-        </Router>
-      </div>     
+    <div className="App"> 
+      <Navbar/>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/SkillPage">
+            <div className="SkillPage">
+              <Skills/>
+            </div>
+          </Route>
+          <Route path="/ProjectPage" component={ProjectPage}/>
+          <Route path="/Contact" component={Contact}/>
+          <Route path={`/project/:index`} component={ProjectDisplay}/>
+        </Switch>
+      </Router>  
+      <Footer/> 
+    </div> 
   );
 }
 

@@ -5,8 +5,7 @@ import Skills from './Skills.js';
 import Education from './Education.js';
 import Awards from './Awards.js';
 
-
-const Home = () => {
+const Home = () => {  
     return ( 
         <div className="Home">
             <Hero/>
@@ -15,7 +14,7 @@ const Home = () => {
             <Skills/>
             <Education/>
             <Awards/>
-        </div>  
+        </div> 
      );
 }
  

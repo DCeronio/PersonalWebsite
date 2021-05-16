@@ -62,12 +62,11 @@
 
 .Hero #background {
   position: relative;
-  background-image: url(./images/heroBackground.jpg);
+  background-image: url(./images/herobackground.jpg);
   clip-path: polygon(0 0, 75% 0, 29% 100%, 0% 100%);
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
   /* animation-name: clipPath;
   animation-duration: 3.5s;*/
 }
@@ -118,7 +117,7 @@
   padding-right: 20px;
 }
 
-.Hero img {
+.Hero img#Headshot {
   border: 5px solid #000000;
   border-radius: 210px;
 }
@@ -317,14 +316,9 @@
   margin: 0;
 }
 
-.ContactInfo #github {
-  height: 50%;
-  padding-bottom: 10px;
-}
-
+.ContactInfo #github,
 .ContactInfo #linkedin {
-  height: 50%;
-  padding-bottom: 10px;
+  padding: 0 10px;
 }
 
 .SkillPage #SkillsSection {
