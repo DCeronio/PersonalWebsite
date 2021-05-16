@@ -14,7 +14,6 @@ const ImageLoad = React.memo(({ src, placeholder, alt = "" }) => {
       updateSrc(src);
     }
   }, [src])
-
   return (
     <img
       id="background"
