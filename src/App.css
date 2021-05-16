@@ -61,12 +61,16 @@
 }
 
 .Hero #background {
+  width: 2500px;
+  height: 1667px;
   position: relative;
-  background-image: url(./images/herobackground.jpg);
+  background-image: url("./images/herobackground.jpg");
   clip-path: polygon(0 0, 75% 0, 29% 100%, 0% 100%);
   width: 100%;
   height: 100vh;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   /* animation-name: clipPath;
   animation-duration: 3.5s;*/
 }
@@ -449,7 +453,7 @@
   text-align: left;
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1500px) {
   .Home .Hero {
     align-items: center;
   }
