@@ -297,13 +297,16 @@
 .Footer {
   background-color: #4d4b4b;
   min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
 }
 
 .ContactInfo {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-content: flex-end;
   flex-wrap: wrap;
   padding-top: 50px;
   font-family: Helvetica Neue LT Pro;
@@ -453,7 +456,7 @@
   text-align: left;
 }
 
-@media (max-width: 1500px) {
+@media only screen and (max-width: 1400px) {
   .Home .Hero {
     align-items: center;
   }
@@ -470,4 +473,56 @@
     color: rgb(50, 121, 226);
     transition-duration: 0.5s;
   }
+  /*
+  .Home p,
+  .Home h3 {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .Home img,
+  .SkillPage img {
+    width: 5vw;
+    height: auto;
+  }
+
+  .Footer p {
+    font-size: 1.5vw;
+  }
+  .Footer #linkedin,
+  .Footer #github {
+    width: 3vw;
+    height: auto;
+  }
+
+  .Home h1 {
+    font-size: 5vw;
+  }
+
+  .projectBoard h1 {
+    font-size: 3.2vw;
+  }
+
+  .Home h2 {
+    font-size: 3.5vw;
+  }
+
+  .topNav a {
+    font-size: 2vw;
+  }
+
+  .ProjectSlider svg {
+    width: 1.5vw;
+    height: auto;
+  }
+
+  .Titles img {
+    width: 20vw;
+    height: auto;
+  }
+
+  .Contact input {
+    size: 20vw;
+  }
+  */
 }
